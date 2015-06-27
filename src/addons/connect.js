@@ -19,6 +19,8 @@ export default React => {
         super(props, context);
 
         this.initialize();
+        // dirty fix to just get this working now
+        this._actions = actions;
 
         this.state = {
           storeState: this.connectToStores(stores, stateGetter),
