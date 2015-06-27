@@ -30,7 +30,7 @@ export default React => {
     },
 
     _getActionsProp(props) {
-      return props.actions || props.injectActions;
+      return this._actions || props.actions || props.injectActions;
     },
 
     _getStoresProp(props) {
